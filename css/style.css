@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    background-color: #0A1643;
+    font-family: Agbalumo;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+h1{
+    font-size: 70px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 25px;
+}
+
+.logoText{
+    display: none;
+}
+
+
+.mylogo{
+    margin-top: 25px;
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+a{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.nav-items{
+    display: block;
+    background-color: inherit;
+}
+
+.nav-items > li, a{
+    display:block;
+    margin: 25px;
+    font-size: 25px;
+    background-color: inherit;
+    color: #0A1643;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    background-color: white;
+    color:  #2b58fa;
+    transition: ease-in 0.3s;
+}
+
+#home{
+    display: flex;
+    flex-basis: 100%;
+    gap: 5%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+.image{
+    display: flex;
+    flex-basis: 100%;
+    order: 1;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(10,22,67,1) 40%, rgba(22,31,88,1) 77%);
+    
+}
+.text{
+    flex-basis: 100%;
+    order: 2;
+    padding: 25px;   
+}
+
+.humanImg{
+    width: 300px;
+    height: 360px;
+    border-radius: 25px;
+    transform: rotate(15deg);
+
+    
+}
+.img2{
+    width: 300px;
+    height: 360px;
+    border-radius: 25px;
+    background: rgb(10,22,67);
+    background: radial-gradient(circle, rgba(10,22,67,1) 0%, rgba(33,39,107,0.5578606442577031) 100%);
+    border: 2px solid white;
+    transform: rotate(-15deg);
+}
+
+header{
+    width: 100%;
+}
+
+button{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #2b58fa;
+    font-size: 15px;
+    width: 150px;
+    margin-top: 15px;
+    border: 0;
+}
+
+.btn4:hover{
+    background-color: white;
+    color:  black;
+    transition: ease-in 0.3s;
+
+}
+
+button:hover{
+    background-color: white;
+    color:  #2b58fa;
+    transition: ease-in 0.3s;
+}
+
+
+.nav{
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+
+.hamMenu{
+    display: block;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+.hamburger{
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+
+    background-color: white;
+}
+
+.hamMenu.active{
+    position: fixed;
+    z-index: 4;
+    background-color: white;
+    top: 20px;
+    right: 20px;
+}
+
+
+.hamMenu.active .hamburger:nth-child(2){
+    opacity: 0;
+    background-color: #0A1643;
+
+}
+
+.hamMenu.active .hamburger:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+    background-color: #0A1643;
+}
+
+.hamMenu.active .hamburger:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+    background-color: #0A1643;
+}
+.nav.active{
+   display: none;
+}
+
+.formTitle{
+    margin: 20px auto;
+    width: 70%;
+
+}
+
+
+.formText{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.formButton{
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+form{
+    border: 1px solid white;
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 15px;
+}
+
+input{
+    width: 80%;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px; 
+}
+
+@media only screen and (min-width: 768px){
+
+    #home{
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: row;
+    }
+   
+
+    .image{
+        flex-basis: 35%;
+        order: 2;  
+    }
+
+    .text{
+        flex-basis: 50%;
+        margin-left: 100px; 
+    }
+
+    img{
+        width: 350px;
+    }
+
+    .img2{
+        width: 350px;
+        
+    }
+
+    .logoText{
+        padding-left: 2px;
+        font-size: 35px;
+        display: inline-block;
+    }
+
+    .hamMenu{
+        display:none;
+        cursor: pointer;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .nav{
+        display: block !important;
+        background-color: #0A1643;
+        width: 100%;
+        position: relative !important;   
+    }
+
+    .nav-items > li, a{
+        display:inline-block;
+        justify-content: space-between;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 10px !important;
+        margin-right: 30px;
+        color: white;
+    }
+
+    
+    a:hover{
+        background-color: white;
+        color:  #2b58fa;
+        transition: ease-in 0.3s;
+    }
+
+    form{
+        border: 1px solid white;
+        width: 48%;
+        margin: 60px auto;
+        border-radius: 15px;
+    }
+
+    .formButton{
+        margin-left: 40%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+
+
+}
