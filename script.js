@@ -19,14 +19,10 @@ function formFill (value){
 }
 
 
-// const input = document.querySelectorAll(".inputToCopy")
+const input = document.querySelectorAll('.inputToCopy')
 
-function init (){
-    document.querySelectorAll(".inputToCopy")
-        .addEventListener("keyup", function(event){
-            formFill(event.target.innerText)
-    })
+document.querySelectorAll('.inputToCopy').forEach(n =>n.addEventListener('change', () =>{
 
-}
-
-init();
+    console.log( 'hi')
+})
+    )

@@ -224,6 +224,38 @@ input{
     margin: 20px;
 }
 
+.about{
+    text-align: center;
+}
+
+.about>p{
+    font-size: 30px;
+}
+
+.about> figure> h1{
+    padding: 20px;
+}
+
+.about> figure> img{
+    width: 90%;
+    height: 500px;
+    border-radius: 25px;
+    
+}
+
+figure{
+    position: relative;
+}
+
+figcaption{
+    position: absolute;
+    font-size: 30px;
+    top: 40%;
+    left: 40%;
+    opacity: 1;
+    
+}
+
 footer{
     text-align: center;
     position: fixed;
