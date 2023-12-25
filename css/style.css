@@ -61,6 +61,24 @@ a:hover{
     transition: ease-in 0.3s;
 }
 
+.btnTag{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #2b58fa;
+    font-size: 15px;
+    width: 150px;
+    margin-top: 15px;
+    border: 0;
+    text-align: center;
+    
+}
+
+.btnTag:hover{
+    background-color: white;
+    color:  #2b58fa;
+    transition: ease-in 0.3s;
+}
+
 #home{
     display: flex;
     flex-basis: 100%;
